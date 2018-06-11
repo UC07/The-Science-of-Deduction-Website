@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>Our Website</title>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="CSS/css.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="CSS/normalize.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/css.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="CSS/normalize.css">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+</head>
+<body>
+
+<header>
+		<div id="Logo">
+			<a href="index.html">
+				<h1>THE CONSULTING DETECTIVE: A MASTERPIECE.</h1>
+			</a>
+		</div>
+			<nav>
+				<div class="NavigationLinks">
+					<ul>
+						<li><a href = "About.html">About</a></li>
+						<li><a href = "Blog.html">Blog</a></li>
+						<li><a href = "Contact.html">Contact</a></li>
+						<li><a href = "Portfolio.html">Portfolio</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="container">
+			<div class="jumbotron text-center mt-3">
+		  <h1 class="display-1">Contact-Me</h1>
+		  <img src="sherlock/Sherlock2.jpg" alt="Sherlock" class="profilepic">
+		  <p class="lead">If you ever need to contact me or book an appointment then please get in touch.We prefer contact by phone but e-mail is also fine. </p>
+		  <hr class="my-2">
+			<section>
+			<p><address>221B, Baker Street
+			   London.</p></address>
+			   <div class="chip">
+					<img src="sherlock/Sherlock15.jpg" alt="Person" width="96" height="96">
+					Sherkock Holmes
+				</div>
+			<p>+1-613-555-3471</p>
+			<p><a href= "mailto:sherlockholmes@gmail.com">E-mail us</p></a>
+			
+			
+		</section>		  
+		</div>
+	</div>
+		
+		<footer>
+			<a href="http://www.twitter.com"><img src="images/twitter.jpg" alt="twitter" class="socialicons"></a>
+			<a href="http://www.facebook.com"><img src="images/facebook.png" alt="facebook" class="socialicons"></a>
+			<a href="http://www.google.com"><img src="images/google.jpg" alt="Google" class="socialicons"></a>
+			<p> &copy; John Watson 2018
+		</footer>
+	</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	<section>
+		<p class="blgr"></p>
+	</section>
+
+</body>
+</html> 

@@ -1,5 +1,11 @@
 body{
 	font-family: 'Open Sans', sans-serif;
+	background: url('../Images/background1.jpg');
+	background-size: cover;
+}
+
+.jumbotron{
+	background: none;
 }
 
 #wrapper{
