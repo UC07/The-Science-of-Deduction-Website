@@ -49,8 +49,8 @@
 			Meanwhile, Blackwood has been sentenced to death and requests to see Holmes, whom he warns of three more unstoppable deaths that will cause great changes to the world.
 			Blackwood is subsequently hanged.
 			</p>
-			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">READ MORE</button>
-			  <div id="demo" class="collapse">
+			<button type="button" class="btn btn-primary">Read More</button>
+			  <div class="collapse">
 				<p>Holmes is visited by Irene Adler, a former adversary who asks him to find a missing man named Luke Reordan.
 				After her departure, Holmes follows her as she meets with her secret employer, and only learns that the man is a professor and that he intimidates Adler.
 				Meanwhile, sightings of a living Blackwood and the discovery of his destroyed tomb lead to belief that Blackwood has risen from the grave.
@@ -64,7 +64,19 @@
 				Holmes studies the rituals of the Order and recognizes their symbols in Blackwood's murders that were staged at specific locations; from this he deduces the targets of the final murder are the members of Parliament.
 				With the aid of Lestrade, Holmes fakes arrest and is taken to see Coward, where he uses evidence on Coward's clothes to deduce Blackwood has conducted a ceremony in the sewers beneath the Palace of Westminster.
 				</p>
+				 <button type="button" class="btn btn-primary">Read less</button> 
 			</div>
+		</div>
+		<script>
+		$(document).ready(function(){
+			$(".btn-primary").click(function(){
+				$(".collapse").collapse('hide');
+			});
+			 $(".btn-primary").click(function(){
+				$(".collapse").collapse('show');
+			});
+		});
+		</script>
 		</section>
 		<footer>
 			<a href="http://www.twitter.com"><img src="Images/twitter.jpg" alt="twitter" class="socialicons"></a>
