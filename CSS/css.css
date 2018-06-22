@@ -296,3 +296,15 @@ q {font-style: italic;}
 
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
+
+
+.thumbnail {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 45%;
+    left: 50;
+    width: 100%;
+}
